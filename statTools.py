@@ -16,3 +16,8 @@ def median(num):
     else:
         value = (numlist[int(number_of_terms/2) - 1] + numlist[int(number_of_terms/2)])/2
     return value
+
+def range(num):
+    numlist = list(num)
+    numlist = sorted(numlist)
+    return(numlist[len(numlist) -1])
