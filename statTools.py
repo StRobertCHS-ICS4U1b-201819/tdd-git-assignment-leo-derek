@@ -15,3 +15,7 @@ def mode(list):
     else:
         mode = max(set(list), key=list.count)
         return mode
+
+def variance(list):
+    x = len(list)
+    u = mean
