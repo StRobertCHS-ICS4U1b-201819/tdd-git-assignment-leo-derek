@@ -1,13 +1,8 @@
 def mean(list):
-    x = sum(list)
-    y = 0
-    for i in list:
-        y = y + 1
-    if y == 0:
-        mean = 0
+    if len(list) > 0:
+        return(sum(list)/len(list))
     else:
-        mean = x / y
-    return(mean)
+        return(0)
 
 def mode(list):
     if len(list) == 0:
@@ -16,6 +11,3 @@ def mode(list):
         mode = max(set(list), key=list.count)
         return mode
 
-def variance(list):
-    x = len(list)
-    u = mean
