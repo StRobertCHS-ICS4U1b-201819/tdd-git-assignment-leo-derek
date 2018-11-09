@@ -41,3 +41,15 @@ def lower_quartile(num):
                 return(median(first_half))
         else:
             return("An error occurred")
+
+def upper_quartile(num):
+    numlist = list(num)
+    numlist = sorted(numlist)
+    if len(numlist) > 3:
+        if len(numlist) % 4 == 0:
+            return (median(numlist) + median(numlist)/2)
+        else:
+            latter_half = numlist[int(len(numlist)/2) + 1:]
+            return (median(latter_half))
+    else:
+        return ("An error occurred")

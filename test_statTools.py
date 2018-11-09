@@ -58,3 +58,24 @@ def test_lower_quartile_basic5():
 def test_lower_quartile_basic6():
     assert(lower_quartile([0.2, 0.5, 0.7, 0.3, 0.1, 0.7, 0.9, 0.4, 1]) == 0.25)
     #0.1, 0.2, 0.3, 0.4, 0.5, 0.7, 0.7, 0.9, 1
+
+def test_upper_quartile_basic1():
+    assert(upper_quartile([3, 4, 5, 6, 7]) == 6.5)
+
+def test_upper_quartile_basic2():
+    assert(upper_quartile([3, 4, 6, 1, 5, 8, 7, 2]) == 6.75)
+    #1,2,3,4,5,6,7,8
+
+def test_upper_quartile_basic3():
+    assert(upper_quartile([2, 3]) == "An error occurred")
+
+def test_upper_quartile_basic4():
+    assert(upper_quartile([0]) == "An error occurred")
+
+def test_upper_quartile_basic5():
+    assert(upper_quartile([0, -2, 1, -5, 3, -9, 10]) == 3)
+    #-9,-5,-2,0,1,3,10
+
+def test_upper_quartile_basic6():
+    assert(upper_quartile([0.2, 0.5, 0.7, 0.3, 0.1, 0.7, 0.9, 0.4, 1]) == 0.8)
+    #0.1, 0.2, 0.3, 0.4, 0.5, 0.7, 0.7, 0.9, 1
