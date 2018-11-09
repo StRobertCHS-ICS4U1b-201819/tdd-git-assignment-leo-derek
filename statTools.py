@@ -33,11 +33,11 @@ def range(num):
 def lower_quartile(num):
         numlist = list(num)
         numlist = sorted(numlist)
-        if len(numlist) > 2:
-            if len(numlist) % 4 != 0:
-                return(numlist[int(len(numlist)/4)])
+        if len(numlist) > 3:
+            if len(numlist) % 4 == 0:
+                return(median(numlist)/2)
             else:
-                return((numlist[int(len(numlist)/4)] + numlist[int(len(numlist)/4)-1])/2)
-
+                first_half = numlist[:int(len(numlist)/2)]
+                return(median(first_half))
         else:
-            return(numlist[0])
+            return("An error occurred")

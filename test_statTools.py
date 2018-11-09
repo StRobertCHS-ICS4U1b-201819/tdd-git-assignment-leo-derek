@@ -39,17 +39,17 @@ def test_range_basic6():
 
 
 def test_lower_quartile_basic1():
-    assert(lower_quartile([3, 4, 5, 6, 7]) == 4)
+    assert(lower_quartile([3, 4, 5, 6, 7]) == 3.5)
 
 def test_lower_quartile_basic2():
-    assert(lower_quartile([3, 4, 6, 1, 5, 8, 7, 2]) == 2.5)
+    assert(lower_quartile([3, 4, 6, 1, 5, 8, 7, 2]) == 2.25)
     #1,2,3,4,5,6,7,8
 
 def test_lower_quartile_basic3():
-    assert(lower_quartile([2, 3]) == 2)
+    assert(lower_quartile([2, 3]) == "An error occurred")
 
 def test_lower_quartile_basic4():
-    assert(lower_quartile([0]) == 0)
+    assert(lower_quartile([0]) == "An error occurred")
 
 def test_lower_quartile_basic5():
     assert (lower_quartile([0, -2, 1, -5, 3, -9, 10]) == -5)
