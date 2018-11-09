@@ -18,17 +18,19 @@ def variance(list):
     squareOfEachDatapoint = []
 
     i = 0
-    while i < n:
+    while i <= n-1:
         x = list[i] - meanX
         subtractMeanFromDatapoint.append(x)
         i = i + 1
 
     j = 0
-    while j < n:
+    while j <= n-1:
         b = subtractMeanFromDatapoint[j]*subtractMeanFromDatapoint[j]
         squareOfEachDatapoint.append(b)
         j = j + 1
 
+
     coolX = sum(squareOfEachDatapoint)
-    varNum = float(coolX/n-1)
+    varNum = (coolX/(n-1))
     return(varNum)
+

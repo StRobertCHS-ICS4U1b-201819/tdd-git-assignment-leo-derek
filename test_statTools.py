@@ -16,7 +16,7 @@ def test_mode_basic1():
     assert(mode([0]) == 0)
 
 def test_mode_basic2():
-    assert(mode([0, 1, 1, 2, 3]) == 1)
+    print(mode([0, 1, 1, 2, 2, 3]) == 1 and 2)
 
 def test_mode_basic3():
     assert(mode([0.1, 0.1, 0.3]) == 0.1)
@@ -26,3 +26,4 @@ def test_mode_basic4():
 
 def test_variance_basic1():
     assert(variance([17, 15, 23, 7, 9, 13]) == 33.2)
+
