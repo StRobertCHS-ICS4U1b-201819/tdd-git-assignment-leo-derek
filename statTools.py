@@ -2,7 +2,7 @@
 def median(num):
 
     numlist = list(num)
-    number_of_terms = int(len(numlist))
+    number_of_terms = len(numlist)
 
     numlist = sorted(numlist)
 
@@ -30,3 +30,14 @@ def range(num):
     else:
         return(0)
 
+def lower_quartile(num):
+        numlist = list(num)
+        numlist = sorted(numlist)
+        if len(numlist) > 2:
+            if len(numlist) % 4 != 0:
+                return(numlist[int(len(numlist)/4)])
+            else:
+                return((numlist[int(len(numlist)/4)] + numlist[int(len(numlist)/4)-1])/2)
+
+        else:
+            return(numlist[0])
