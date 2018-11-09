@@ -27,3 +27,23 @@ def test_mode_basic4():
 def test_variance_basic1():
     assert(variance([17, 15, 23, 7, 9, 13]) == 33.2)
 
+def test_variance_basic2():
+    assert(variance([1, 2, 3, 4, 5, 6]) == 3.5)
+
+def test_variance_basic3():
+    assert(variance([10, 20, 30]) == 100)
+
+def test_variance_basic4():
+    assert(variance([1, 10, 10, 20, 46, 240]) == 8499.1)
+
+def test_standard_deviation_basic1():
+    assert(standard_deviation([10, 20, 30]) == 10)
+
+def test_standard_deviation_basic2():
+    assert(standard_deviation([1, 10, 10, 20, 46, 240]) == 92.19)
+
+def test_standard_deviation_basic3():
+    assert(standard_deviation([1, 2, 3, 4, 5, 6]) == 1.87)
+
+def test_standard_deviation_basic4():
+    assert(standard_deviation([0, 1, 1, 2, 2, 3]) == 1.05)
