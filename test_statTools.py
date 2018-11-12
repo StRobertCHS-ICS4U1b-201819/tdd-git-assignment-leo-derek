@@ -12,17 +12,20 @@ def test_mean_basic3():
 def test_mean_basic4():
     assert(mean([0.1, 0.2, 0.3]) == 0.20000000000000004)
 
+def test_mean_basic5():
+    assert(mean([0]) == 0)
+
 def test_mode_basic1():
-    assert(mode([0]) == 0)
+    assert(mode([1, 2, 3, 3, 3]) == 3)
 
 def test_mode_basic2():
-    print(mode([0, 1, 1, 2, 2, 3]) == 1 and 2)
+    assert(mode([1, 2, 2, 2, 2, 3, 3, 3, 3, 3]) == 3)
 
 def test_mode_basic3():
-    assert(mode([0.1, 0.1, 0.3]) == 0.1)
+    assert(mode([1, 2, 2, 3, 3, 3, 3, 3]) == 3)
 
 def test_mode_basic4():
-    assert(mode([]) == 0)
+    assert(mode([1, 2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3]) == 2)
 
 def test_variance_basic1():
     assert(variance([17, 15, 23, 7, 9, 13]) == 33.2)

@@ -7,11 +7,10 @@ def mean(list):
         return("An error has occurred")
 
 def mode(list):
-    if len(list) == 0:
-        return 0
-    else:
-        mode = max(set(list), key=list.count)
-        return mode
+    try:
+        return max(list, key=list.count)
+    except AssertionError:
+        raise AssertionError("must input a list")
 
 def variance(list):
     n = len(list)
@@ -30,7 +29,6 @@ def variance(list):
         b = subtractMeanFromDatapoint[j]*subtractMeanFromDatapoint[j]
         squareOfEachDatapoint.append(b)
         j = j + 1
-
 
     coolX = sum(squareOfEachDatapoint)
     varNum = (coolX/(n-1))
