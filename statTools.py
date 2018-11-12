@@ -1,18 +1,29 @@
 import math
+'''
+-----------------------------------------------------------------------------------------------------
+Filename: statTools.py
+Purpose: functions that find statistics: mean, mode, variance, standard deviation
+Author: L, Xiao
+Created: 31/10/2018
+-----------------------------------------------------------------------------------------------------
+'''
 
 def mean(list):
+
     try:
         return(sum(list)/len(list))
     except:
         return("An error has occurred")
 
 def mode(list):
+
     try:
         return max(list, key=list.count)
     except AssertionError:
         raise AssertionError("must input a list")
 
 def variance(list):
+
     n = len(list)
     meanX = sum(list)/len(list)
     subtractMeanFromDatapoint = []
@@ -35,6 +46,7 @@ def variance(list):
     return(varNum)
 
 def standard_deviation(list):
+
     n = len(list)
     meanX = sum(list) / len(list)
     subtractMeanFromDatapoint = []
