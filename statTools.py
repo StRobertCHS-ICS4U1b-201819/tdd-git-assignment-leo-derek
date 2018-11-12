@@ -1,3 +1,13 @@
+"""
+-------------------------------------------------------------------------------
+Name:		mean.py
+Purpose:
+To return the mean of the list of numbers back to the user
+Author:		Shat.D
+Created:		07/11/2018
+------------------------------------------------------------------------------
+"""
+
 
 def median(num:list):
     try:
@@ -20,6 +30,15 @@ def median(num:list):
         raise AttributeError("A list was not provided")
 
 
+"""
+-------------------------------------------------------------------------------
+Name:		median.py
+Purpose:		
+To return the median of a list of numbers back to the user
+Author:		Shat.D
+Created:		08/11/2018
+------------------------------------------------------------------------------
+"""
 
 
 def range(num:list):
@@ -40,6 +59,17 @@ def range(num:list):
     except AttributeError:
         raise AttributeError("A list was not provided")
 
+"""
+-------------------------------------------------------------------------------
+Name:		lower_quartile.py
+Purpose:		
+To find the lower quartile value from a list of numbers
+Author:		Shat.D
+Created:		09/11/2018
+------------------------------------------------------------------------------
+"""
+
+
 def lower_quartile(num:list):
     try:
         if len(num) == 0:
@@ -57,6 +87,18 @@ def lower_quartile(num:list):
 
     except AttributeError:
         raise AttributeError("A list was not provided")
+
+
+"""
+-------------------------------------------------------------------------------
+Name:		upper_quartile.py
+Purpose:		
+To find the upper quartile value from a list of numbers
+Author:		Shat.D
+Created:		09/11/2018
+------------------------------------------------------------------------------
+"""
+
 
 def upper_quartile(num:list):
     try:
