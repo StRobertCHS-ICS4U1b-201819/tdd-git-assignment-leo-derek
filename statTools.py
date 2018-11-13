@@ -80,6 +80,7 @@ def lower_quartile(num: list):
             raise ValueError("Illegal empty list or list too short")
 
         num.sort()
+
         if len(num) > 3:
             if len(num) % 4 == 0:
                 return median(num)/2
@@ -89,11 +90,11 @@ def lower_quartile(num: list):
         else:
             return("An error occurred")
 
-    except AttributeError:
-        raise AttributeError('A list was not provided.')
-
     except TypeError:
         raise TypeError('A list was not provided.')
+
+    except AttributeError:
+        raise AttributeError('A list was not provided.')
 
 
 """
@@ -113,6 +114,7 @@ def upper_quartile(num: list):
             raise ValueError("Illegal empty list or list too short")
 
         num.sort()
+
         if len(num) > 3:
             if len(num) % 4 == 0:
                 return median(num) + median(num)/2
@@ -120,9 +122,9 @@ def upper_quartile(num: list):
                 latter_half = num[int(len(num)/2) + 1:]
                 return median(latter_half)
 
-    except AttributeError:
-        raise AttributeError("A list was not provided.")
-
     except TypeError:
         raise TypeError('A list was not provided.')
+
+    except AttributeError:
+        raise AttributeError("A list was not provided.")
 
