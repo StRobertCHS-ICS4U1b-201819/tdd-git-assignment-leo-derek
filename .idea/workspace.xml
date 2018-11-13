@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ded06013-d712-482a-bd21-60f180ce12ca" name="Default Changelist" comment="" />
+    <list default="true" id="ded06013-d712-482a-bd21-60f180ce12ca" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/test_statTools.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_statTools.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,10 +21,11 @@
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.16" value="1" />
           <entry key="project.open.time.18" value="1" />
+          <entry key="project.open.time.19" value="1" />
           <entry key="project.open.time.20" value="1" />
           <entry key="project.open.time.24" value="1" />
           <entry key="project.open.time.30" value="1" />
-          <entry key="project.opened" value="6" />
+          <entry key="project.opened" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -37,46 +40,46 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="4696" />
+          <entry key="py" value="4863" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="4696" />
+          <entry key="Python" value="4863" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/statTools.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1393">
-              <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
+            <state relative-caret-position="272">
+              <caret line="117" lean-forward="true" selection-start-line="117" selection-end-line="117" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test_statTools.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="54" column="2" lean-forward="true" selection-start-line="54" selection-start-column="2" selection-end-line="54" selection-end-column="2" />
+            <state relative-caret-position="257">
+              <caret line="116" column="30" lean-forward="true" selection-start-line="116" selection-start-column="30" selection-end-line="116" selection-end-column="30" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
-                <marker date="1542037260908" expanded="true" signature="320:555" ph="..." />
-                <marker date="1542037260908" expanded="true" signature="418:555" ph="..." />
-                <marker date="1542037260908" expanded="true" signature="579:584" ph="..." />
-                <marker date="1542037260908" expanded="true" signature="633:638" ph="..." />
-                <marker date="1542037260908" expanded="true" signature="705:710" ph="..." />
-                <marker date="1542037260908" expanded="true" signature="780:781" ph="..." />
-                <marker date="1542037260908" expanded="true" signature="780:785" ph="..." />
-                <marker date="1542037260908" expanded="true" signature="857:1087" ph="..." />
-                <marker date="1542037260908" expanded="true" signature="1207:1212" ph="..." />
-                <marker date="1542037260908" expanded="true" signature="1324:1329" ph="..." />
-                <marker date="1542037260908" expanded="true" signature="1417:1422" ph="..." />
-                <marker date="1542037260908" expanded="true" signature="1626:1631" ph="..." />
+                <marker date="1542122277860" expanded="true" signature="326:562" ph="..." />
+                <marker date="1542122277860" expanded="true" signature="425:562" ph="..." />
+                <marker date="1542122277860" expanded="true" signature="586:591" ph="..." />
+                <marker date="1542122277860" expanded="true" signature="641:646" ph="..." />
+                <marker date="1542122277860" expanded="true" signature="714:719" ph="..." />
+                <marker date="1542122277860" expanded="true" signature="790:791" ph="..." />
+                <marker date="1542122277860" expanded="true" signature="790:795" ph="..." />
+                <marker date="1542122277860" expanded="true" signature="868:1099" ph="..." />
+                <marker date="1542122277860" expanded="true" signature="1221:1226" ph="..." />
+                <marker date="1542122277860" expanded="true" signature="1318:1323" ph="..." />
+                <marker date="1542122277860" expanded="true" signature="1412:1417" ph="..." />
+                <marker date="1542122277860" expanded="true" signature="1600:1605" ph="..." />
               </folding>
             </state>
           </provider>
@@ -100,8 +103,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/test_statTools.py" />
         <option value="$PROJECT_DIR$/statTools.py" />
+        <option value="$PROJECT_DIR$/test_statTools.py" />
       </list>
     </option>
   </component>
@@ -185,6 +188,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="141" y="4" width="1225" height="716" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.24936171" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -239,32 +243,32 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/test_statTools.py">
+    <entry file="file://$PROJECT_DIR$/statTools.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="54" column="2" lean-forward="true" selection-start-line="54" selection-start-column="2" selection-end-line="54" selection-end-column="2" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-            <marker date="1542037260908" expanded="true" signature="320:555" ph="..." />
-            <marker date="1542037260908" expanded="true" signature="418:555" ph="..." />
-            <marker date="1542037260908" expanded="true" signature="579:584" ph="..." />
-            <marker date="1542037260908" expanded="true" signature="633:638" ph="..." />
-            <marker date="1542037260908" expanded="true" signature="705:710" ph="..." />
-            <marker date="1542037260908" expanded="true" signature="780:781" ph="..." />
-            <marker date="1542037260908" expanded="true" signature="780:785" ph="..." />
-            <marker date="1542037260908" expanded="true" signature="857:1087" ph="..." />
-            <marker date="1542037260908" expanded="true" signature="1207:1212" ph="..." />
-            <marker date="1542037260908" expanded="true" signature="1324:1329" ph="..." />
-            <marker date="1542037260908" expanded="true" signature="1417:1422" ph="..." />
-            <marker date="1542037260908" expanded="true" signature="1626:1631" ph="..." />
-          </folding>
+        <state relative-caret-position="272">
+          <caret line="117" lean-forward="true" selection-start-line="117" selection-end-line="117" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/statTools.py">
+    <entry file="file://$PROJECT_DIR$/test_statTools.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1393">
-          <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
+        <state relative-caret-position="257">
+          <caret line="116" column="30" lean-forward="true" selection-start-line="116" selection-start-column="30" selection-end-line="116" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+            <marker date="1542122277860" expanded="true" signature="326:562" ph="..." />
+            <marker date="1542122277860" expanded="true" signature="425:562" ph="..." />
+            <marker date="1542122277860" expanded="true" signature="586:591" ph="..." />
+            <marker date="1542122277860" expanded="true" signature="641:646" ph="..." />
+            <marker date="1542122277860" expanded="true" signature="714:719" ph="..." />
+            <marker date="1542122277860" expanded="true" signature="790:791" ph="..." />
+            <marker date="1542122277860" expanded="true" signature="790:795" ph="..." />
+            <marker date="1542122277860" expanded="true" signature="868:1099" ph="..." />
+            <marker date="1542122277860" expanded="true" signature="1221:1226" ph="..." />
+            <marker date="1542122277860" expanded="true" signature="1318:1323" ph="..." />
+            <marker date="1542122277860" expanded="true" signature="1412:1417" ph="..." />
+            <marker date="1542122277860" expanded="true" signature="1600:1605" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>

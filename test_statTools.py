@@ -78,6 +78,12 @@ def test_lower_quartile_basic6():
     assert(lower_quartile([0.2, 0.5, 0.7, 0.3, 0.1, 0.7, 0.9, 0.4, 1]) == 0.25)
 
 
+def test_lower_quartile_shortList():
+    with pytest.raises(ValueError) as errmsg:
+        lower_quartile([0])
+    assert('Illegal empty list or list too short' == str(errmsg.value))
+
+
 def test_lower_quartile_wrongType():
     with pytest.raises(AttributeError) as errmsg:
         lower_quartile("hello")
@@ -93,16 +99,21 @@ def test_upper_quartile_basic2():
 
 
 def test_upper_quartile_basic3():
-    assert(upper_quartile([2, 3]) == "An error occurred")
-
-
-def test_upper_quartile_basic4():
-    assert(upper_quartile([0]) == "An error occurred")
-
-
-def test_upper_quartile_basic5():
     assert(upper_quartile([0, -2, 1, -5, 3, -9, 10]) == 3)
 
 
-def test_upper_quartile_basic6():
+def test_upper_quartile_basic4():
     assert(upper_quartile([0.2, 0.5, 0.7, 0.3, 0.1, 0.7, 0.9, 0.4, 1]) == 0.8)
+
+
+def test_upper_quartile_shortList():
+    with pytest.raises(ValueError) as errmsg:
+        upper_quartile([0])
+    assert('Illegal empty list or list too short' == str(errmsg.value))
+
+
+def test_upper_quartile_wrong_attribute():
+    with pytest.raises(AttributeError) as errmsg:
+        upper_quartile("hello")
+    assert ('A list was not provided' == str(errmsg.value))
+

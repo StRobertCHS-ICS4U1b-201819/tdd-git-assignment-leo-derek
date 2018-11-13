@@ -9,7 +9,7 @@ Created:		07/11/2018
 """
 
 
-def median(num:list):
+def median(num: list):
     try:
         if len(num) == 0:
             raise ValueError("Illegal empty list")
@@ -41,7 +41,7 @@ Created:		08/11/2018
 """
 
 
-def range(num:list):
+def range(num: list):
     try:
         if len(num) == 0:
             raise ValueError("Illegal empty list")
@@ -70,7 +70,7 @@ Created:		09/11/2018
 """
 
 
-def lower_quartile(num:list):
+def lower_quartile(num: list):
     try:
         if len(num) == 0:
             raise ValueError("Illegal empty list")
@@ -100,7 +100,7 @@ Created:		09/11/2018
 """
 
 
-def upper_quartile(num:list):
+def upper_quartile(num: list):
     try:
         if len(num) <= 3:
             raise ValueError("Illegal empty list or list too short")
