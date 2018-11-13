@@ -11,7 +11,7 @@ Created:		07/11/2018
 
 def median(num: list):
     try:
-        if len(num) == 0:
+        if len(num) < 1:
             raise ValueError("Illegal empty list or list too short")
 
         number_of_terms = len(num)
@@ -26,8 +26,11 @@ def median(num: list):
 
         return value
 
+    except TypeError:
+        raise TypeError("A list was not provided.")
+
     except AttributeError:
-        raise AttributeError("A list was not provided")
+        raise AttributeError("A list was not provided.")
 
 
 """
@@ -54,10 +57,10 @@ def range(num: list):
             return num[0]
 
     except TypeError:
-        raise TypeError("A non-negative integer was not provided.")
+        raise TypeError("A list was not provided.")
 
     except AttributeError:
-        raise AttributeError("A list was not provided")
+        raise AttributeError("A list was not provided.")
 
 """
 -------------------------------------------------------------------------------
@@ -87,10 +90,10 @@ def lower_quartile(num: list):
             return("An error occurred")
 
     except AttributeError:
-        raise AttributeError('A list was not provided')
+        raise AttributeError('A list was not provided.')
 
     except TypeError:
-        raise TypeError('A list was not provided')
+        raise TypeError('A list was not provided.')
 
 
 """
@@ -118,8 +121,8 @@ def upper_quartile(num: list):
                 return median(latter_half)
 
     except AttributeError:
-        raise AttributeError("A list was not provided")
+        raise AttributeError("A list was not provided.")
 
     except TypeError:
-        raise TypeError('A list was not provided')
+        raise TypeError('A list was not provided.')
 
