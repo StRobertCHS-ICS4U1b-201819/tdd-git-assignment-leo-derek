@@ -6,6 +6,13 @@ Purpose: functions that find statistics: mean, mode, variance, standard deviatio
 Author: L, Xiao
 Created: 31/10/2018
 -----------------------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------------------
+Filename: mean.py
+Purpose: when given a list, finds the mean
+Author: L, Xiao
+Created: 31/10/2018
+-----------------------------------------------------------------------------------------------------
 '''
 
 def mean(list):
@@ -14,6 +21,7 @@ def mean(list):
         return(sum(list)/len(list))
     except:
         return("An error has occurred")
+
 
 def mode(list):
 
