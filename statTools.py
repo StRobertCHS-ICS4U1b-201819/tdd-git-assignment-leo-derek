@@ -88,6 +88,9 @@ def lower_quartile(num: list):
     except AttributeError:
         raise AttributeError("A list was not provided")
 
+    except TypeError:
+        raise TypeError('Illegal empty list or list too short')
+
 
 """
 -------------------------------------------------------------------------------
@@ -115,3 +118,7 @@ def upper_quartile(num: list):
 
     except AttributeError:
         raise AttributeError("A list was not provided")
+
+    except TypeError:
+        raise TypeError('A list was not provided')
+
