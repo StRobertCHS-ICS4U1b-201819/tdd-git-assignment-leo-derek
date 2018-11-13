@@ -25,8 +25,12 @@ def test_mode_basic3():
     assert(mode([1, 2, 2, 3, 3, 3, 3, 3]) == 3)
 
 def test_mode_basic4():
-    assert(mode([1, 2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3]) == 2)
+    assert(mode([1, 2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3]) == 2)
 
+'''
+def test_mode_basic5():
+    assert(mode("hello") == "l")
+'''
 def test_variance_basic1():
     assert(variance([17, 15, 23, 7, 9, 13]) == 33.2)
 

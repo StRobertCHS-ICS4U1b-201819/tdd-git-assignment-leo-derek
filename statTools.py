@@ -15,28 +15,50 @@ Created: 31/10/2018
 -----------------------------------------------------------------------------------------------------
 '''
 
-def mean(list):
+def mean(data_set):
 
     try:
-        return(sum(list)/len(list))
+        return(sum(data_set)/len(data_set))
     except:
         return "An error has occurred"
 
 '''
 -----------------------------------------------------------------------------------------------------
 Filename: mode.py
-Purpose: returns the mode of a given list
+Purpose: returns a list of mode of a given list
 Author: L, Xiao
 Created: 31/10/2018
 -----------------------------------------------------------------------------------------------------
 '''
 
-def mode(list):
+def mode(data_set):
+    # raise error if input is not a list
+    if type(data_set) != list:
+        raise TypeError("input must be a list")
 
-    try:
-        return max(list, key=list.count)
-    except AssertionError:
-        raise AssertionError("must input a list")
+    # return none if empty list
+    if len(data_set) == 0:
+        return None
+
+    count = {}
+    highest = 0
+    # adds every item occurrence to a dict mapping to the number of times the item appears
+    # keep track of greatest occurrence
+
+    for item in data_set:
+        if item in count:
+            count[item] += 1
+
+        else:
+            count[item] = 1
+
+        if count[item] > highest:
+            highest = count[item]
+
+    # finds all values that have the same number of occurrences as the greatest number of occurrences
+    out = [unique for unique in count if count[unique] == highest]
+    # returns single value if only 1 mode- list of values if multiple
+    return(out)
 
 '''
 -----------------------------------------------------------------------------------------------------
@@ -47,16 +69,16 @@ Created: 31/10/2018
 -----------------------------------------------------------------------------------------------------
 '''
 
-def variance(list):
+def variance(data_set):
 
-    n = len(list)
-    meanX = sum(list)/len(list)
+    n = len(data_set)
+    meanX = sum(data_set)/len(data_set)
     subtract_mean_from_datapoint = []
     square_of_each_point = []
 
     i = 0
     while i <= n-1:
-        x = list[i] - meanX
+        x = data_set[i] - meanX
         subtract_mean_from_datapoint.append(x)
         i = i + 1
 
@@ -79,16 +101,16 @@ Created: 31/10/2018
 -----------------------------------------------------------------------------------------------------
 '''
 
-def standard_deviation(list):
+def standard_deviation(data_set):
 
-    n = len(list)
-    meanX = sum(list) / len(list)
+    n = len(data_set)
+    meanX = sum(data_set) / len(data_set)
     subtract_mean_from_datapoint = []
     square_of_each_point = []
 
     i = 0
     while i <= n - 1:
-        x = list[i] - meanX
+        x = data_set[i] - meanX
         subtract_mean_from_datapoint.append(x)
         i = i + 1
 
