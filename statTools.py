@@ -72,8 +72,9 @@ Created:		09/11/2018
 
 def lower_quartile(num: list):
     try:
-        if len(num) == 0:
-            raise ValueError("Illegal empty list")
+
+        if len(num) <= 3:
+            raise ValueError("Illegal empty list or list too short")
 
         num.sort()
         if len(num) > 3:
@@ -86,10 +87,10 @@ def lower_quartile(num: list):
             return("An error occurred")
 
     except AttributeError:
-        raise AttributeError("A list was not provided")
+        raise AttributeError('A list was not provided')
 
     except TypeError:
-        raise TypeError('Illegal empty list or list too short')
+        raise TypeError('A list was not provided')
 
 
 """
