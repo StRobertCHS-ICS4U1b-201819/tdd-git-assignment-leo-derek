@@ -52,7 +52,7 @@ def variance(list):
     n = len(list)
     meanX = sum(list)/len(list)
     subtract_mean_from_datapoint = []
-    squareOfEachDatapoint = []
+    square_of_each_point = []
 
     i = 0
     while i <= n-1:
@@ -63,10 +63,10 @@ def variance(list):
     j = 0
     while j <= n-1:
         b = subtract_mean_from_datapoint[j]*subtract_mean_from_datapoint[j]
-        squareOfEachDatapoint.append(b)
+        square_of_each_point.append(b)
         j = j + 1
 
-    coolX = sum(squareOfEachDatapoint)
+    coolX = sum(square_of_each_point)
     varNum = (coolX/(n-1))
     return(varNum)
 
@@ -84,7 +84,7 @@ def standard_deviation(list):
     n = len(list)
     meanX = sum(list) / len(list)
     subtract_mean_from_datapoint = []
-    squareOfEachDatapoint = []
+    square_of_each_point = []
 
     i = 0
     while i <= n - 1:
@@ -95,10 +95,10 @@ def standard_deviation(list):
     j = 0
     while j <= n - 1:
         b = subtract_mean_from_datapoint[j] * subtract_mean_from_datapoint[j]
-        squareOfEachDatapoint.append(b)
+        square_of_each_point.append(b)
         j = j + 1
 
-    coolX = sum(squareOfEachDatapoint)
+    coolX = sum(square_of_each_point)
     varNum = (coolX / (n - 1))
 
     return(float("%0.2f" % (math.sqrt(varNum))))
