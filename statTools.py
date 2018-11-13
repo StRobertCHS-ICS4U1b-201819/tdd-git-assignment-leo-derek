@@ -12,7 +12,7 @@ Created:		07/11/2018
 def median(num: list):
     try:
         if len(num) == 0:
-            raise ValueError("Illegal empty list")
+            raise ValueError("Illegal empty list or list too short")
 
         number_of_terms = len(num)
 
@@ -43,8 +43,8 @@ Created:		08/11/2018
 
 def range(num: list):
     try:
-        if len(num) == 0:
-            raise ValueError("Illegal empty list")
+        if len(num) < 2:
+            raise ValueError('Illegal empty list or list too short')
 
         num.sort()
 
