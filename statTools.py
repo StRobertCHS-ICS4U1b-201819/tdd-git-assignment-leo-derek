@@ -49,9 +49,9 @@ def range(num:list):
         num.sort()
 
         if len(num) >= 2:
-            return(num[len(num) -1] - num[0])
+            return num[len(num) -1] - num[0]
         elif len(num) == 1:
-            return(num[0])
+            return num[0]
 
     except TypeError:
         raise TypeError("A non-negative integer was not provided.")
@@ -78,10 +78,10 @@ def lower_quartile(num:list):
         num.sort()
         if len(num) > 3:
             if len(num) % 4 == 0:
-                return(median(num)/2)
+                return median(num)/2
             else:
                 first_half = num[:int(len(num)/2)]
-                return(median(first_half))
+                return median(first_half)
         else:
             return("An error occurred")
 
@@ -108,10 +108,10 @@ def upper_quartile(num:list):
         num.sort()
         if len(num) > 3:
             if len(num) % 4 == 0:
-                return (median(num) + median(num)/2)
+                return median(num) + median(num)/2
             else:
                 latter_half = num[int(len(num)/2) + 1:]
-                return (median(latter_half))
+                return median(latter_half)
 
     except AttributeError:
         raise AttributeError("A list was not provided")
