@@ -70,6 +70,16 @@ def variance(list):
     varNum = (coolX/(n-1))
     return(varNum)
 
+'''
+-----------------------------------------------------------------------------------------------------
+Filename: standard_deviation.py
+Purpose: returns the standard deviation of a given list
+Author: L, Xiao
+Created: 31/10/2018
+-----------------------------------------------------------------------------------------------------
+'''
+
+
 def standard_deviation(list):
 
     n = len(list)
