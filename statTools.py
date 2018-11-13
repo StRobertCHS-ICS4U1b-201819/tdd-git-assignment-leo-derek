@@ -9,7 +9,7 @@ Created: 31/10/2018
 
 -----------------------------------------------------------------------------------------------------
 Filename: mean.py
-Purpose: when given a list, finds the mean
+Purpose: when given a list, returns the mean of the list
 Author: L, Xiao
 Created: 31/10/2018
 -----------------------------------------------------------------------------------------------------
@@ -20,8 +20,16 @@ def mean(list):
     try:
         return(sum(list)/len(list))
     except:
-        return("An error has occurred")
+        return "An error has occurred"
 
+'''
+-----------------------------------------------------------------------------------------------------
+Filename: mode.py
+Purpose: returns the mode of a given list
+Author: L, Xiao
+Created: 31/10/2018
+-----------------------------------------------------------------------------------------------------
+'''
 
 def mode(list):
 
@@ -29,6 +37,15 @@ def mode(list):
         return max(list, key=list.count)
     except AssertionError:
         raise AssertionError("must input a list")
+
+'''
+-----------------------------------------------------------------------------------------------------
+Filename: variance.py
+Purpose: returns the variance of a given list
+Author: L, Xiao
+Created: 31/10/2018
+-----------------------------------------------------------------------------------------------------
+'''
 
 def variance(list):
 
