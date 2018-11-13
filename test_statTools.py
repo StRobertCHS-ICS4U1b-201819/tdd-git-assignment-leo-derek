@@ -97,7 +97,6 @@ def test_lower_quartile_value_error():
 def test_lower_quartile_type_error():
     with pytest.raises(TypeError) as errmsg:
         lower_quartile(0)
-        lower_quartile("hello")
     assert('A list was not provided.' == str(errmsg.value))
 
 
