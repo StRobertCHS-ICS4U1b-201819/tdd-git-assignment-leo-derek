@@ -49,6 +49,12 @@ def test_variance_basic3():
 def test_variance_basic4():
     assert(variance([1, 10, 10, 20, 46, 240]) == 8499.1)
 
+def test_variance_type_error():
+    with pytest.raises(TypeError) as errmsg:
+        variance(["a", "b", "c"])
+    assert("Error: please input a list of integers" == str(errmsg.value))
+
+
 def test_standard_deviation_basic1():
     assert(standard_deviation([10, 20, 30]) == 10)
 

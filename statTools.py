@@ -96,8 +96,9 @@ def variance(data_set):
         coolX = sum(square_of_each_point)
         varNum = (coolX/(n-1))
         return(varNum)
-    except:
-        pass
+    except TypeError:
+        raise TypeError("Error: please input a list of integers")
+
 
 '''
 -----------------------------------------------------------------------------------------------------
