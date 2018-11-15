@@ -21,8 +21,13 @@ def mean(data_set):
     :param data_set: list of numbers
     :return: mean of a list of numbers
     """
-        return sum(data_set)/len(data_set)
-
+    try:
+        if len(data_set) < 1:
+            return None
+        else:
+            return sum(data_set)/len(data_set)
+    except TypeError:
+        return ("Error: please input a list of integers")
 
 '''
 -----------------------------------------------------------------------------------------------------
