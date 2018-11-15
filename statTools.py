@@ -24,7 +24,7 @@ def median(num: list):
         return value
 
     except TypeError:
-        raise TypeError("A list was not provided.")
+        raise TypeError("A list was not provided or no numbers were found in list.")
 
     except AttributeError:
         raise AttributeError("A list was not provided.")
@@ -49,7 +49,7 @@ def range(num: list):
             return num[0]
 
     except TypeError:
-        raise TypeError('A list was not provided.')
+        raise TypeError("A list was not provided or no numbers were found in list.")
 
     except AttributeError:
         raise AttributeError("A list was not provided.")
@@ -90,7 +90,7 @@ def lower_quartile(num: list):
                 return median(first_half)
 
     except TypeError:
-        raise TypeError('A list was not provided.')
+        raise TypeError("A list was not provided or no numbers were found in list.")
 
     except AttributeError:
         raise AttributeError('A list was not provided.')
@@ -119,7 +119,7 @@ def upper_quartile(num: list):
                 return median(latter_half)
 
     except TypeError:
-        raise TypeError('A list was not provided.')
+        raise TypeError("A list was not provided or no numbers were found in list.")
 
     except AttributeError:
         raise AttributeError("A list was not provided.")

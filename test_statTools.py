@@ -24,10 +24,16 @@ def test_median_value_error():
     assert ('Illegal empty list or list too short' == str(errmsg.value))
 
 
-def test_median_type_error():
+def test_median_type_error1():
     with pytest.raises(TypeError) as errmsg:
-        range(0)
-    assert('A list was not provided.' == str(errmsg.value))
+        median(["hello", "hi"])
+    assert ('A list was not provided or no numbers were found in list.' == str(errmsg.value))
+
+
+def test_median_type_error2():
+    with pytest.raises(TypeError) as errmsg:
+        median(0)
+    assert('A list was not provided or no numbers were found in list.' == str(errmsg.value))
 
 
 def test_median_attribute_error():
@@ -63,11 +69,16 @@ def test_range_attribute_error():
         range("hello")
     assert ('A list was not provided.' == str(errmsg.value))
 
+def test_range_type_error1():
+    with pytest.raises(TypeError) as errmsg:
+        range(["hello", "hi"])
+    assert ('A list was not provided or no numbers were found in list.' == str(errmsg.value))
 
-def test_range_type_error():
+
+def test_range_type_error2():
     with pytest.raises(TypeError) as errmsg:
         range(0)
-    assert('A list was not provided.' == str(errmsg.value))
+    assert('A list was not provided or no numbers were found in list.' == str(errmsg.value))
 
 
 def test_lower_quartile_basic1():
@@ -92,10 +103,16 @@ def test_lower_quartile_value_error():
     assert('Illegal empty list or list too short' == str(errmsg.value))
 
 
-def test_lower_quartile_type_error():
+def test_lower_quartile_type_error1():
+    with pytest.raises(TypeError) as errmsg:
+        lower_quartile(["hello", "hi", "hello there", "bye"])
+    assert ('A list was not provided or no numbers were found in list.' == str(errmsg.value))
+
+
+def test_lower_quartile_type_error2():
     with pytest.raises(TypeError) as errmsg:
         lower_quartile(0)
-    assert('A list was not provided.' == str(errmsg.value))
+    assert('A list was not provided or no numbers were found in list.' == str(errmsg.value))
 
 
 def test_lower_quartile_attribute_error():
@@ -131,7 +148,13 @@ def test_upper_quartile_attribute_error():
         upper_quartile("hello")
     assert ('A list was not provided.' == str(errmsg.value))
 
-def test_upper_quartile_type_error():
+def test_upper_quartile_type_error1():
+    with pytest.raises(TypeError) as errmsg:
+        upper_quartile(["hello", "hi", "hello there", "bye"])
+    assert ('A list was not provided or no numbers were found in list.' == str(errmsg.value))
+
+
+def test_upper_quartile_type_error2():
     with pytest.raises(TypeError) as errmsg:
         upper_quartile(0)
-    assert ('A list was not provided.' == str(errmsg.value))
+    assert('A list was not provided or no numbers were found in list.' == str(errmsg.value))
