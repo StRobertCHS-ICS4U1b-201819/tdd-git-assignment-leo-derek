@@ -57,10 +57,10 @@ Created: 31/10/2018
 '''
 
 def variance(data_set):
-    '''Given a list of numbers, return the variance of that list
+    """Given a list of numbers, return the variance of that list
     :param data_set: list of numbers
     :return: the variance of that list of numbers
-    '''
+    """
 
     n = len(data_set)
     meanX = sum(data_set)/len(data_set)
