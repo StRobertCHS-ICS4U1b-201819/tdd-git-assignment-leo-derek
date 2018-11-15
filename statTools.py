@@ -42,22 +42,24 @@ def mode(data_set):
     '''Given a list of numbers, return the mode of that list
     :param data_set: list of numbers
     :return: the mode of that list of numbers
+
     '''
+    try:
+        # Check to see if the list has any numbers
 
-    # Check to see if the list has any numbers
+        int_list = [int(i) for i in data_set]
 
-    int_list = [int(i) for i in data_set]
+        if len(int_list) < 1:
+            return None
 
-    if len(int_list) < 1:
-        return None
-
-    # Counts the number of times each value appears in the list and returns the most common number
-    else:
-        try:
+        # Counts the number of times each value appears in the list and returns the most common number
+        else:
             mode = max(set(int_list), key=int_list.count)
+
             return mode
-        except ValueError:
-            return "Error: please input a list of integers"
+
+    except ValueError:
+        raise ValueError("Error: please input a list of integers")
 
 '''
 -----------------------------------------------------------------------------------------------------
