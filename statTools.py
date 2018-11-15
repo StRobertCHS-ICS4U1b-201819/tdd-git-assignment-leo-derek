@@ -93,10 +93,10 @@ Created: 31/10/2018
 '''
 
 def standard_deviation(data_set):
-    '''Given a list of numbers, return the standard deviation of that list
+    """Given a list of numbers, return the standard deviation of that list
     :param data_set: list of numbers
     :return: the standard deviation of that list of numbers
-    '''
+    """
 
     n = len(data_set)
     meanX = sum(data_set) / len(data_set)
