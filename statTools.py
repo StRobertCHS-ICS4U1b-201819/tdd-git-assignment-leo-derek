@@ -8,24 +8,32 @@ def median(num: list):
     """
 
     try:
+
+        # Raises an error if the list is empty
         if len(num) < 1:
             raise ValueError("Illegal empty list or list too short")
 
         number_of_terms = len(num)
 
+        # Sorts the list from least to greatest
         num.sort()
 
+        # If the number of items in the list is an odd number, value is the number in the middle
         if number_of_terms % 2 == 1:
             value = num[int(number_of_terms/2)]
 
+        # If the number of items in the list is an even number, value is the mean of the two middle numbers
         else:
             value = (num[int(number_of_terms/2) - 1] + num[int(number_of_terms/2)])/2
 
+        # Returns the value
         return value
 
+    # Raises an error if a string is inputted or contains a string in the list
     except TypeError:
         raise TypeError("A list was not provided or no numbers were found in list.")
 
+    # Raises an error if a number not in a list is inputted
     except AttributeError:
         raise AttributeError("A list was not provided.")
 
@@ -53,17 +61,6 @@ def range(num: list):
 
     except AttributeError:
         raise AttributeError("A list was not provided.")
-
-
-"""
--------------------------------------------------------------------------------
-Name:		lower_quartile.py
-Purpose:		
-To find the lower quartile value from a list of numbers
-Author:		Shat.D
-Created:		09/11/2018
-------------------------------------------------------------------------------
-"""
 
 
 def lower_quartile(num: list):
