@@ -17,15 +17,12 @@ Created: 31/10/2018
 '''
 
 def mean(data_set):
-    '''Given a list of numbers, return the mean of that list
+    """Given a list of numbers, return the mean of that list
     :param data_set: list of numbers
     :return: mean of a list of numbers
-    '''
-
-    try:
+    """
         return sum(data_set)/len(data_set)
-    except:
-        return "An error has occurred"
+
 
 '''
 -----------------------------------------------------------------------------------------------------
