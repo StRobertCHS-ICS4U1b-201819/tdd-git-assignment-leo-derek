@@ -1,22 +1,14 @@
 import math
-'''
------------------------------------------------------------------------------------------------------
-Filename: statTools.py
-Purpose: functions that find statistics: mean, mode, variance, standard deviation
-Author: L, Xiao
-Created: 31/10/2018
------------------------------------------------------------------------------------------------------
-'''
-'''
------------------------------------------------------------------------------------------------------
-Filename: mean.py
-Purpose: when given a list, returns the mean of the list
-Author: L, Xiao
-Created: 31/10/2018
------------------------------------------------------------------------------------------------------
-'''
+
+# ----------------------------------------------------------------------------------------------------- #
+# Filename: statTools.py                                                                                #
+# Purpose: functions that find statistics: mean, mode, variance, standard deviation                     #
+# Author: L, Xiao                                                                                       #
+# Created: 31/10/2018                                                                                   #
+# ----------------------------------------------------------------------------------------------------- #
 
 def mean(data_set):
+
     """Given a list of numbers, return the mean of that list
     :param data_set: list of numbers
     :return: mean of a list of numbers
@@ -29,16 +21,8 @@ def mean(data_set):
     except TypeError:
         raise TypeError("Error: please input a list of integers")
 
-'''
------------------------------------------------------------------------------------------------------
-Filename: mode.py
-Purpose: returns a list of mode of a given list
-Author: L, Xiao
-Created: 31/10/2018
------------------------------------------------------------------------------------------------------
-'''
-
 def mode(data_set):
+
     '''Given a list of numbers, return the mode of that list
     :param data_set: list of numbers
     :return: the mode of that list of numbers
@@ -61,16 +45,8 @@ def mode(data_set):
     except ValueError:
         raise ValueError("Error: please input a list of integers")
 
-'''
------------------------------------------------------------------------------------------------------
-Filename: variance.py
-Purpose: returns the variance of a given list
-Author: L, Xiao
-Created: 31/10/2018
------------------------------------------------------------------------------------------------------
-'''
-
 def variance(data_set):
+
     """Given a list of numbers, return the variance of that list
     :param data_set: list of numbers
     :return: the variance of that list of numbers
@@ -99,21 +75,13 @@ def variance(data_set):
     except TypeError:
         raise TypeError("Error: please input a list of integers")
 
-
-'''
------------------------------------------------------------------------------------------------------
-Filename: standard_deviation.py
-Purpose: returns the standard deviation of a given list
-Author: L, Xiao
-Created: 31/10/2018
------------------------------------------------------------------------------------------------------
-'''
-
 def standard_deviation(data_set):
+
     """Given a list of numbers, return the standard deviation of that list
     :param data_set: list of numbers
     :return: the standard deviation of that list of numbers
     """
+
     try:
         n = len(data_set)
         meanX = sum(data_set) / len(data_set)
