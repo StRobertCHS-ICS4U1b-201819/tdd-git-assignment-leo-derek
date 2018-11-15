@@ -13,18 +13,16 @@ def median(num: list):
         if len(num) < 1:
             raise ValueError("Illegal empty list or list too short")
 
-        number_of_terms = len(num)
-
         # Sorts the list from least to greatest
         num.sort()
 
         # If the number of items in the list is an odd number, value is the number in the middle
-        if number_of_terms % 2 == 1:
-            value = num[int(number_of_terms/2)]
+        if len(num) % 2 == 1:
+            value = num[int(len(num)/2)]
 
         # If the number of items in the list is an even number, value is the mean of the two middle numbers
         else:
-            value = (num[int(number_of_terms/2) - 1] + num[int(number_of_terms/2)])/2
+            value = (num[int(len(num)/2) - 1] + num[int(len(num)/2)])/2
 
         # Returns the value
         return value
