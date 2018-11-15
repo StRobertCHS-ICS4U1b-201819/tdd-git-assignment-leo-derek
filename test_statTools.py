@@ -27,7 +27,6 @@ def test_median_value_error():
 def test_median_type_error():
     with pytest.raises(TypeError) as errmsg:
         range(0)
-        range("hello")
     assert('A list was not provided.' == str(errmsg.value))
 
 
@@ -68,7 +67,6 @@ def test_range_attribute_error():
 def test_range_type_error():
     with pytest.raises(TypeError) as errmsg:
         range(0)
-        range("hello")
     assert('A list was not provided.' == str(errmsg.value))
 
 
