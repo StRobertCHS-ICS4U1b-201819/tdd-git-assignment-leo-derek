@@ -6,7 +6,8 @@ Purpose: functions that find statistics: mean, mode, variance, standard deviatio
 Author: L, Xiao
 Created: 31/10/2018
 -----------------------------------------------------------------------------------------------------
-
+'''
+'''
 -----------------------------------------------------------------------------------------------------
 Filename: mean.py
 Purpose: when given a list, returns the mean of the list
@@ -16,9 +17,13 @@ Created: 31/10/2018
 '''
 
 def mean(data_set):
+    '''Given a list of numbers, return the mean of that list
+    :param data_set: list of numbers
+    :return: mean of a list of numbers
+    '''
 
     try:
-        return(sum(data_set)/len(data_set))
+        return sum(data_set)/len(data_set)
     except:
         return "An error has occurred"
 
@@ -32,33 +37,18 @@ Created: 31/10/2018
 '''
 
 def mode(data_set):
-    # raise error if input is not a list
-    if type(data_set) != list:
-        raise TypeError("input must be a list")
+    '''Given a list of numbers, return the mode of that list
+    :param data_set: list of numbers
+    :return: the mode of that list of numbers
+    '''
 
-    # return none if empty list
+    # Check to see if the list has any numbers
     if len(data_set) == 0:
         return None
 
-    count = {}
-    highest = 0
-    # adds every item occurrence to a dict mapping to the number of times the item appears
-    # keep track of greatest occurrence
-
-    for item in data_set:
-        if item in count:
-            count[item] += 1
-
-        else:
-            count[item] = 1
-
-        if count[item] > highest:
-            highest = count[item]
-
-    # finds all values that have the same number of occurrences as the greatest number of occurrences
-    out = [unique for unique in count if count[unique] == highest]
-    # returns single value if only 1 mode- list of values if multiple
-    return(out)
+    # Counts the number of times each value appears in the list and returns the most common number
+    mode = max(set(data_set), key=data_set.count)
+    return mode
 
 '''
 -----------------------------------------------------------------------------------------------------
@@ -70,6 +60,10 @@ Created: 31/10/2018
 '''
 
 def variance(data_set):
+    '''Given a list of numbers, return the variance of that list
+    :param data_set: list of numbers
+    :return: the variance of that list of numbers
+    '''
 
     n = len(data_set)
     meanX = sum(data_set)/len(data_set)
@@ -102,6 +96,10 @@ Created: 31/10/2018
 '''
 
 def standard_deviation(data_set):
+    '''Given a list of numbers, return the standard deviation of that list
+    :param data_set: list of numbers
+    :return: the standard deviation of that list of numbers
+    '''
 
     n = len(data_set)
     meanX = sum(data_set) / len(data_set)
