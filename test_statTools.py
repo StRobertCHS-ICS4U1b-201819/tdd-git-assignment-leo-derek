@@ -16,7 +16,9 @@ def test_mean_basic5():
     assert(mean([]) == None)
 
 def test_mean_type_error():
-    assert(mean(["a b c"]) == "Error: please input a list of integers")
+    with pytest.raises(TypeError) as errmsg:
+        mean(["a"])
+    assert ("Error: please input a list of integers" == str(errmsg.value))
 
 def test_mode_basic1():
     assert(mode([1, 2, 3, 3, 3]) == 3)
