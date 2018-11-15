@@ -54,7 +54,6 @@ def test_variance_type_error():
         variance(["a", "b", "c"])
     assert("Error: please input a list of integers" == str(errmsg.value))
 
-
 def test_standard_deviation_basic1():
     assert(standard_deviation([10, 20, 30]) == 10)
 
@@ -66,3 +65,8 @@ def test_standard_deviation_basic3():
 
 def test_standard_deviation_basic4():
     assert(standard_deviation([0, 1, 1, 2, 2, 3]) == 1.05)
+
+def test_standard_deviation_type_error():
+    with pytest.raises(TypeError) as errmsg:
+        standard_deviation(["a", "b", "c"])
+    assert("Error: please input a list of integers" == str(errmsg.value))

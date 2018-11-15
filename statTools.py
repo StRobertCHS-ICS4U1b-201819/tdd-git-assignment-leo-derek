@@ -114,25 +114,27 @@ def standard_deviation(data_set):
     :param data_set: list of numbers
     :return: the standard deviation of that list of numbers
     """
+    try:
+        n = len(data_set)
+        meanX = sum(data_set) / len(data_set)
+        subtract_mean_from_datapoint = []
+        square_of_each_point = []
 
-    n = len(data_set)
-    meanX = sum(data_set) / len(data_set)
-    subtract_mean_from_datapoint = []
-    square_of_each_point = []
+        i = 0
+        while i <= n - 1:
+            x = data_set[i] - meanX
+            subtract_mean_from_datapoint.append(x)
+            i = i + 1
 
-    i = 0
-    while i <= n - 1:
-        x = data_set[i] - meanX
-        subtract_mean_from_datapoint.append(x)
-        i = i + 1
+        j = 0
+        while j <= n - 1:
+            b = subtract_mean_from_datapoint[j] * subtract_mean_from_datapoint[j]
+            square_of_each_point.append(b)
+            j = j + 1
 
-    j = 0
-    while j <= n - 1:
-        b = subtract_mean_from_datapoint[j] * subtract_mean_from_datapoint[j]
-        square_of_each_point.append(b)
-        j = j + 1
+        coolX = sum(square_of_each_point)
+        varNum = (coolX / (n - 1))
 
-    coolX = sum(square_of_each_point)
-    varNum = (coolX / (n - 1))
-
-    return(float("%0.2f" % (math.sqrt(varNum))))
+        return(float("%0.2f" % (math.sqrt(varNum))))
+    except TypeError:
+        raise TypeError("Error: please input a list of integers")
