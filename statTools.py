@@ -27,7 +27,7 @@ def mean(data_set):
         else:
             return sum(data_set)/len(data_set)
     except TypeError:
-        return ("Error: please input a list of integers")
+        return "Error: please input a list of integers"
 
 '''
 -----------------------------------------------------------------------------------------------------
@@ -45,12 +45,19 @@ def mode(data_set):
     '''
 
     # Check to see if the list has any numbers
-    if len(data_set) == 0:
+
+    int_list = [int(i) for i in data_set]
+
+    if len(int_list) < 1:
         return None
 
     # Counts the number of times each value appears in the list and returns the most common number
-    mode = max(set(data_set), key=data_set.count)
-    return mode
+    else:
+        try:
+            mode = max(set(int_list), key=int_list.count)
+            return mode
+        except ValueError:
+            return "Error: please input a list of integers"
 
 '''
 -----------------------------------------------------------------------------------------------------
