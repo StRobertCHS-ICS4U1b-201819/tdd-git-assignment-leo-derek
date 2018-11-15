@@ -1,15 +1,12 @@
-"""
--------------------------------------------------------------------------------
-Name:		mean.py
-Purpose:
-To return the mean of the list of numbers back to the user
-Author:		Shat.D
-Created:		07/11/2018
-------------------------------------------------------------------------------
-"""
 
 
 def median(num: list):
+    """Finds the median of the list
+    :param num: the list of numbers
+    :return: int or float The number or mean of the numbers that appear in the middle of the list after sorted least
+    to greatest
+    """
+
     try:
         if len(num) < 1:
             raise ValueError("Illegal empty list or list too short")
@@ -33,18 +30,12 @@ def median(num: list):
         raise AttributeError("A list was not provided.")
 
 
-"""
--------------------------------------------------------------------------------
-Name:		median.py
-Purpose:		
-To return the median of a list of numbers back to the user
-Author:		Shat.D
-Created:		08/11/2018
-------------------------------------------------------------------------------
-"""
-
-
 def range(num: list):
+    """Finds the range of the list
+      :param num: the list of numbers
+      :return: int or float The difference between the greatest and least value in the list
+      """
+
     try:
         if len(num) < 2:
             raise ValueError('Illegal empty list or list too short')
@@ -58,10 +49,11 @@ def range(num: list):
             return num[0]
 
     except TypeError:
-        raise TypeError("A list was not provided.")
+        raise TypeError('A list was not provided.')
 
     except AttributeError:
         raise AttributeError("A list was not provided.")
+
 
 """
 -------------------------------------------------------------------------------
@@ -75,6 +67,12 @@ Created:		09/11/2018
 
 
 def lower_quartile(num: list):
+    """Finds the lower quartile of the list
+      :param num: the list of numbers
+      :return: int or float The number or mean of the numbers that appear in the middle of the first half of the list
+      after sorted least to greatest
+      """
+
     try:
 
         if len(num) <= 3:
@@ -98,18 +96,13 @@ def lower_quartile(num: list):
         raise AttributeError('A list was not provided.')
 
 
-"""
--------------------------------------------------------------------------------
-Name:		upper_quartile.py
-Purpose:		
-To find the upper quartile value from a list of numbers
-Author:		Shat.D
-Created:		09/11/2018
-------------------------------------------------------------------------------
-"""
-
-
 def upper_quartile(num: list):
+    """Finds the upper quartile of the list
+      :param num: the list of numbers
+      :return: int or float The number or mean of the numbers that appear in the middle of the second half of the list
+      after sorted least to greatest
+      """
+
     try:
         if len(num) <= 3:
             raise ValueError("Illegal empty list or list too short")
