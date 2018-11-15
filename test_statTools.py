@@ -54,7 +54,7 @@ def test_range_basic4():
 
 def test_range_value_error():
     with pytest.raises(ValueError) as errmsg:
-        range([0])
+        range([])
     assert ('Illegal empty list or list too short' == str(errmsg.value))
 
 
@@ -88,7 +88,7 @@ def test_lower_quartile_basic4():
 
 def test_lower_quartile_value_error():
     with pytest.raises(ValueError) as errmsg:
-        lower_quartile([0])
+        lower_quartile([])
     assert('Illegal empty list or list too short' == str(errmsg.value))
 
 
@@ -122,7 +122,7 @@ def test_upper_quartile_basic4():
 
 def test_upper_quartile_value_error():
     with pytest.raises(ValueError) as errmsg:
-        upper_quartile([0])
+        upper_quartile([])
     assert('Illegal empty list or list too short' == str(errmsg.value))
 
 
