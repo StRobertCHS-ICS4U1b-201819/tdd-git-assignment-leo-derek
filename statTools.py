@@ -26,7 +26,7 @@ def median(num: list):
 
     # Raises an error if a string is inputted or contains a string in the list
     except TypeError:
-        raise TypeError("A list was not provided or no numbers were found in list.")
+        raise TypeError("A list was not provided or a non-number item was found in list.")
 
     # Raises an error if a number not in a list is inputted
     except AttributeError:
@@ -59,7 +59,7 @@ def range(num: list):
 
     # Raises an error if a string is inputted or contains a string in the list
     except TypeError:
-        raise TypeError("A list was not provided or no numbers were found in list.")
+        raise TypeError("A list was not provided or a non-number item was found in list.")
 
     # Raises an error if a number not in a list is inputted
     except AttributeError:
@@ -84,18 +84,21 @@ def lower_quartile(num: list):
 
         if len(num) > 3:
 
+            # creates a list for the first half of the original list
             first_half = num[:int(len(num)/2)]
 
             # Returns the median of the first half of the list
             if len(num) % 4 == 0:
-                return (median(first_half[0:-1]) + median(first_half))/2
+                return (median(first_half[:-1]) + median(first_half))/2
 
             else:
                 return median(first_half)
 
+    # Raises an error when a list is not provided or a non-number item is found in the list
     except TypeError:
-        raise TypeError("A list was not provided or no numbers were found in list.")
+        raise TypeError("A list was not provided or a non-number item was found in list.")
 
+    # Raises an error when a list is not provided
     except AttributeError:
         raise AttributeError('A list was not provided.')
 
@@ -118,14 +121,14 @@ def upper_quartile(num: list):
             latter_half = num[int(len(num) / 2) + 1:]
 
             if len(num) % 4 == 0:
-                return (median(latter_half[0:-1]) + median(latter_half))/2
+                return (median(latter_half[:-1]) + median(latter_half))/2
 
             else:
 
                 return median(latter_half)
 
     except TypeError:
-        raise TypeError("A list was not provided or no numbers were found in list.")
+        raise TypeError("A list was not provided or a non-number item was found in list.")
 
     except AttributeError:
         raise AttributeError("A list was not provided.")
