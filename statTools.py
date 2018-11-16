@@ -18,11 +18,11 @@ def median(num: list):
 
         # If the number of items in the list is an odd number, returns the number in the middle
         if len(num) % 2 == 1:
-            return num[int(len(num)/2)]
+            return num[len(num)//2]
 
         # If the number of items in the list is an even number, returns the mean of the two middle numbers
         else:
-            return (num[int(len(num)/2) - 1] + num[int(len(num)/2)])/2
+            return (num[len(num)//2 - 1] + num[len(num)//2])/2
 
     # Raises an error if a string is inputted or contains a string in the list
     except TypeError:
@@ -85,7 +85,7 @@ def lower_quartile(num: list):
         if len(num) > 3:
 
             # creates a list for the first half of the original list
-            first_half = num[:int(len(num)/2)]
+            first_half = num[:len(num)//2]
 
             # Returns the median of the first half of the list
             if len(num) % 4 == 0:
@@ -118,7 +118,7 @@ def upper_quartile(num: list):
 
         if len(num) > 3:
 
-            latter_half = num[int(len(num) / 2) + 1:]
+            latter_half = num[len(num)//2 + 1:]
 
             if len(num) % 4 == 0:
                 return (median(latter_half) + median(latter_half[:-1]))/2
