@@ -103,6 +103,6 @@ def standard_deviation(data_set):
         coolX = sum(square_of_each_point)
         varNum = (coolX / (n - 1))
 
-        return(float("%0.2f" % (math.sqrt(varNum))))
+        return float("%0.2f" % (math.sqrt(varNum)))
     except TypeError:
         raise TypeError("Error: please input a list of integers")

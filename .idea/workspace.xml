@@ -48,31 +48,24 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="-636827435">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test_statTools.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
+            <state relative-caret-position="255">
               <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
-                <marker date="1542297630491" expanded="true" signature="61:66" ph="..." />
-                <marker date="1542297630491" expanded="true" signature="115:120" ph="..." />
-                <marker date="1542297630491" expanded="true" signature="152:154" ph="..." />
-                <marker date="1542297630491" expanded="true" signature="177:182" ph="..." />
-                <marker date="1542297630491" expanded="true" signature="259:511" ph="..." />
-                <marker date="1542297630491" expanded="true" signature="311:342" ph="..." />
-                <marker date="1542297630491" expanded="true" signature="510:511" ph="..." />
-                <marker date="1542297630491" expanded="true" signature="534:539" ph="..." />
-                <marker date="1542297630491" expanded="true" signature="840:992" ph="..." />
-                <marker date="1542297630491" expanded="true" signature="991:992" ph="..." />
-                <marker date="1542297630491" expanded="true" signature="1101:1106" ph="..." />
-                <marker date="1542297630491" expanded="true" signature="1178:1183" ph="..." />
-                <marker date="1542297630491" expanded="true" signature="1339:1494" ph="..." />
-                <marker date="1542297630491" expanded="true" signature="1531:1536" ph="..." />
-                <marker date="1542297630491" expanded="true" signature="1726:1731" ph="..." />
               </folding>
             </state>
           </provider>
@@ -81,8 +74,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/statTools.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="108" lean-forward="true" selection-start-line="108" selection-end-line="108" />
+            <state relative-caret-position="-13">
+              <caret line="88" column="33" selection-start-line="88" selection-start-column="33" selection-end-line="88" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -120,10 +113,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="7" />
+    <option name="x" value="6" />
     <option name="y" value="20" />
-    <option name="width" value="1342" />
-    <option name="height" value="699" />
+    <option name="width" value="1343" />
+    <option name="height" value="700" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -148,7 +141,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -160,6 +152,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -210,7 +203,7 @@
     </recent_temporary>
   </component>
   <component name="SvnConfiguration">
-    <configuration />
+    <configuration>C:\Users\Leo\AppData\Roaming\Subversion</configuration>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -232,9 +225,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-3" y="0" width="1372" height="740" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27609682" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27986577" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -248,7 +241,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.32843137" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.32352942" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.32340425" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.3267974" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -266,33 +259,18 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/test_statTools.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
+        <state relative-caret-position="255">
           <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
-            <marker date="1542297630491" expanded="true" signature="61:66" ph="..." />
-            <marker date="1542297630491" expanded="true" signature="115:120" ph="..." />
-            <marker date="1542297630491" expanded="true" signature="152:154" ph="..." />
-            <marker date="1542297630491" expanded="true" signature="177:182" ph="..." />
-            <marker date="1542297630491" expanded="true" signature="259:511" ph="..." />
-            <marker date="1542297630491" expanded="true" signature="311:342" ph="..." />
-            <marker date="1542297630491" expanded="true" signature="510:511" ph="..." />
-            <marker date="1542297630491" expanded="true" signature="534:539" ph="..." />
-            <marker date="1542297630491" expanded="true" signature="840:992" ph="..." />
-            <marker date="1542297630491" expanded="true" signature="991:992" ph="..." />
-            <marker date="1542297630491" expanded="true" signature="1101:1106" ph="..." />
-            <marker date="1542297630491" expanded="true" signature="1178:1183" ph="..." />
-            <marker date="1542297630491" expanded="true" signature="1339:1494" ph="..." />
-            <marker date="1542297630491" expanded="true" signature="1531:1536" ph="..." />
-            <marker date="1542297630491" expanded="true" signature="1726:1731" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/statTools.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="108" lean-forward="true" selection-start-line="108" selection-end-line="108" />
+        <state relative-caret-position="-13">
+          <caret line="88" column="33" selection-start-line="88" selection-start-column="33" selection-end-line="88" selection-end-column="33" />
         </state>
       </provider>
     </entry>
