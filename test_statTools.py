@@ -146,22 +146,22 @@ def test_upper_quartile_basic5():
     assert(upper_quartile([0, -2, 1, -5, 3, -9, 10, 11]) == 8.25)
 
 
-def test_upper_quartile_value_error():
+def test_upper_quartile_value_error1():
     with pytest.raises(ValueError) as errmsg:
         upper_quartile([])
-    assert('Illegal empty list or list too short' == str(errmsg.value))
+    assert('Empty list or a non-number item was found in list.' == str(errmsg.value))
+
+
+def test_upper_quartile_value_error2():
+    with pytest.raises(ValueError) as errmsg:
+        upper_quartile(["hello", "hi", "hello there", "he"])
+    assert ('Empty list or a non-number item was found in list.' == str(errmsg.value))
 
 
 def test_upper_quartile_attribute_error():
     with pytest.raises(AttributeError) as errmsg:
         upper_quartile("hello")
     assert ('A list was not provided.' == str(errmsg.value))
-
-
-def test_upper_quartile_type_error1():
-    with pytest.raises(TypeError) as errmsg:
-        upper_quartile(["hello", "hi", "hello there", "he"])
-    assert ('A list was not provided or a non-number item was found in list.' == str(errmsg.value))
 
 
 def test_upper_quartile_type_error2():
