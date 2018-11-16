@@ -3,15 +3,15 @@ from statTools import*
 
 
 def test_median_basic1():
-   assert(median([3, 4, 5, 6, 7]) == 5)
+    assert(median([3, 4, 5, 6, 7]) == 5)
 
 
 def test_median_basic2():
-   assert(median([3, 4, 2, 1, 5, 3, 7, 2]) == 3)
+    assert(median([3, 4, 2, 1, 5, 3, 7, 2]) == 3)
 
 
 def test_median_basic3():
-   assert(median([2, 3]) == 2.5)
+    assert(median([2, 3]) == 2.5)
 
 
 def test_median_basic4():
@@ -69,6 +69,7 @@ def test_range_attribute_error():
         range("hello")
     assert ('A list was not provided.' == str(errmsg.value))
 
+
 def test_range_type_error1():
     with pytest.raises(TypeError) as errmsg:
         range(["hello", "hi"])
@@ -96,8 +97,10 @@ def test_lower_quartile_basic3():
 def test_lower_quartile_basic4():
     assert(lower_quartile([0.2, 0.5, 0.7, 0.3, 0.1, 0.7, 0.9, 0.4, 1]) == 0.25)
 
+
 def test_lower_quartile_basic5():
     assert(lower_quartile([0, -2, 1, -5, 3, -9, 10, 11]) == -4.25)
+
 
 def test_lower_quartile_value_error():
     with pytest.raises(ValueError) as errmsg:
@@ -107,7 +110,7 @@ def test_lower_quartile_value_error():
 
 def test_lower_quartile_type_error1():
     with pytest.raises(TypeError) as errmsg:
-        lower_quartile(["hello", "hi", "hello there", "hi"])
+        lower_quartile(["hello", "hi", "hello there", "he"])
     assert('A list was not provided or a non-number item was found in list.' == str(errmsg.value))
 
 
@@ -157,7 +160,7 @@ def test_upper_quartile_attribute_error():
 
 def test_upper_quartile_type_error1():
     with pytest.raises(TypeError) as errmsg:
-        upper_quartile(["hello", "hi", "hello there", "hi"])
+        upper_quartile(["hello", "hi", "hello there", "he"])
     assert ('A list was not provided or a non-number item was found in list.' == str(errmsg.value))
 
 

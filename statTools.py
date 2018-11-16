@@ -121,10 +121,9 @@ def upper_quartile(num: list):
             latter_half = num[int(len(num) / 2) + 1:]
 
             if len(num) % 4 == 0:
-                return (median(latter_half[:-1]) + median(latter_half))/2
+                return (median(latter_half) + median(latter_half[:-1]))/2
 
             else:
-
                 return median(latter_half)
 
     except TypeError:
