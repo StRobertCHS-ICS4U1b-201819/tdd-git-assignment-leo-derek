@@ -111,10 +111,9 @@ def upper_quartile(num: list):
       """
 
     try:
-        num = [float(i) for i in num]
 
         if len(num) <= 3:
-            raise ValueError("Empty list or a non-number item was found in list.")
+            raise ValueError("Illegal empty list or list too short")
 
         else:
 

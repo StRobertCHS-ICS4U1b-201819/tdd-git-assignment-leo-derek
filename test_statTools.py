@@ -110,11 +110,17 @@ def test_lower_quartile_value_error():
 
 def test_lower_quartile_type_error1():
     with pytest.raises(TypeError) as errmsg:
-        lower_quartile(["hello", "hi", "hello there", "he"])
+        lower_quartile(["hello", "hi", "hello there", 2])
     assert('A list was not provided or a non-number item was found in list.' == str(errmsg.value))
 
 
 def test_lower_quartile_type_error2():
+    with pytest.raises(TypeError) as errmsg:
+        lower_quartile(["hello", "hi", "hello there", "he"])
+    assert('A list was not provided or a non-number item was found in list.' == str(errmsg.value))
+
+
+def test_lower_quartile_type_error3():
     with pytest.raises(TypeError) as errmsg:
         lower_quartile(0)
     assert('A list was not provided or a non-number item was found in list.' == str(errmsg.value))
@@ -149,13 +155,13 @@ def test_upper_quartile_basic5():
 def test_upper_quartile_value_error1():
     with pytest.raises(ValueError) as errmsg:
         upper_quartile([])
-    assert('Empty list or a non-number item was found in list.' == str(errmsg.value))
+    assert('Illegal empty list or list too short' == str(errmsg.value))
 
 
 def test_upper_quartile_value_error2():
     with pytest.raises(ValueError) as errmsg:
         upper_quartile(["hello", "hi", "hello there", "he"])
-    assert ('Empty list or a non-number item was found in list.' == str(errmsg.value))
+    assert ('Illegal empty list or list too short' == str(errmsg.value))
 
 
 def test_upper_quartile_attribute_error():
@@ -165,6 +171,12 @@ def test_upper_quartile_attribute_error():
 
 
 def test_upper_quartile_type_error2():
+    with pytest.raises(TypeError) as errmsg:
+        upper_quartile(["hello", "hi", "hello there", 2])
+        assert ('A list was not provided or a non-number item was found in list.' == str(errmsg.value))
+
+
+def test_upper_quartile_type_error3():
     with pytest.raises(TypeError) as errmsg:
         upper_quartile(0)
     assert('A list was not provided or a non-number item was found in list.' == str(errmsg.value))
