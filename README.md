@@ -2,6 +2,7 @@
 
 
 **Leo:**
+
 ☑ mean 
 
 ☑ mode 
@@ -12,6 +13,7 @@
 
 
 **Derek:**
+
 ☑ median 
 
 ☑ range 
