@@ -18,7 +18,9 @@ def median(num: list):
 
         # If the number of items in the list is an odd number, returns the number in the middle
         if len(num) % 2 == 1:
-            return num[len(num)//2]
+
+            # multiplication and division there to ensure code will not work with strings
+            return num[len(num)//2]/2*2
 
         # If the number of items in the list is an even number, returns the mean of the two middle numbers
         else:
