@@ -81,12 +81,12 @@ def lower_quartile(num: list):
         if len(num) <= 3:
             raise ValueError("Illegal empty list or list too short")
 
-        # Sorts the list from least to greatest
-        num.sort()
+        else:
 
-        if len(num) > 3:
+            # Sorts the list from least to greatest
+            num.sort()
 
-            # creates a list for the first half of the original list
+            # Creates a list for the first half of the original list
             first_half = num[:len(num)//2]
 
             # Returns the median of the first half of the list
@@ -114,24 +114,30 @@ def upper_quartile(num: list):
 
     try:
 
+        # Raises an error if the list contains less than 4 objects
         if len(num) <= 3:
             raise ValueError("Illegal empty list or list too short")
 
         else:
 
+            # Sorts the list from least to greatest
             num.sort()
 
+            # Creates a ;ost fpr the latter half of the original list
             latter_half = num[len(num)//2 + 1:]
 
+            # Returns the median of the latter half
             if len(num) % 4 == 0:
                 return (median(latter_half) + median(latter_half[:-1]))/2
 
             else:
                 return median(latter_half)
 
+    # Raises an error when a list is not provided or a non-number item is found in the list
     except TypeError:
         raise TypeError("A list was not provided or a non-number item was found in list.")
 
+    # Raises an error when a list is not provided
     except AttributeError:
         raise AttributeError("A list was not provided.")
 
