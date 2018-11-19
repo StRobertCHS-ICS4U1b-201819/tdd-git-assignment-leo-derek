@@ -3,7 +3,7 @@ import math
 # ----------------------------------------------------------------------------------------------------- #
 # Filename: statTools.py                                                                                #
 # Purpose: functions that find statistics: mean, mode, variance, standard deviation                     #
-# Author: L, Xiao                                                                                       #
+# Author: L. Xiao                                                                                       #
 # Created: 31/10/2018                                                                                   #
 # ----------------------------------------------------------------------------------------------------- #
 
