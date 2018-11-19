@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ded06013-d712-482a-bd21-60f180ce12ca" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/statTools.py" beforeDir="false" afterPath="$PROJECT_DIR$/statTools.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_statTools.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_statTools.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,7 +13,7 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/tdd_git_assignment_leo_derek$statTools.coverage" NAME="statTools Coverage Results" MODIFIED="1542506831283" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/tdd_git_assignment_leo_derek$pytest_for_test_statTools_test_median_basic1.coverage" NAME="pytest for test_statTools.test_median_basic1 Coverage Results" MODIFIED="1542506798859" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/tdd_git_assignment_leo_derek$pytest_in_test_statTools_py.coverage" NAME="pytest in test_statTools.py Coverage Results" MODIFIED="1542512400625" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/tdd_git_assignment_leo_derek$pytest_in_test_statTools_py.coverage" NAME="pytest in test_statTools.py Coverage Results" MODIFIED="1542513130743" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="-1991260407">
@@ -56,18 +55,19 @@
     <session id="1388356315">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.opened" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="955" />
+          <entry key="py" value="1090" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="955" />
+          <entry key="Python" value="1090" />
         </counts>
       </usages-collector>
     </session>
@@ -77,10 +77,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/statTools.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1373">
-              <caret line="21" column="48" selection-start-line="21" selection-start-column="48" selection-end-line="21" selection-end-column="48" />
+            <state relative-caret-position="17">
+              <caret line="21" column="46" selection-start-line="21" selection-start-column="46" selection-end-line="21" selection-end-column="46" />
               <folding>
-                <marker date="1542512541863" expanded="true" signature="1:2" ph="..." />
+                <marker date="1542513251199" expanded="true" signature="1:2" ph="..." />
               </folding>
             </state>
           </provider>
@@ -134,7 +134,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="433" />
     <option name="y" value="249" />
     <option name="width" value="1225" />
@@ -246,12 +246,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="pytest_in_test_statTools_py - 2018.11.17 at 22h 30m 29s.xml">
-      <configuration name="pytest in test_statTools.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_in_test_statTools_py - 2018.11.17 at 22h 31m 43s.xml">
-      <configuration name="pytest in test_statTools.py" configurationId="tests" />
-    </history-entry>
     <history-entry file="pytest_in_test_statTools_py - 2018.11.17 at 22h 33m 30s.xml">
       <configuration name="pytest in test_statTools.py" configurationId="tests" />
     </history-entry>
@@ -274,6 +268,12 @@
       <configuration name="pytest in test_statTools.py" configurationId="tests" />
     </history-entry>
     <history-entry file="pytest_in_test_statTools_py - 2018.11.17 at 22h 40m 01s.xml">
+      <configuration name="pytest in test_statTools.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_in_test_statTools_py - 2018.11.17 at 22h 50m 51s.xml">
+      <configuration name="pytest in test_statTools.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_in_test_statTools_py - 2018.11.17 at 22h 52m 12s.xml">
       <configuration name="pytest in test_statTools.py" configurationId="tests" />
     </history-entry>
   </component>
@@ -356,10 +356,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/statTools.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1373">
-          <caret line="21" column="48" selection-start-line="21" selection-start-column="48" selection-end-line="21" selection-end-column="48" />
+        <state relative-caret-position="17">
+          <caret line="21" column="46" selection-start-line="21" selection-start-column="46" selection-end-line="21" selection-end-column="46" />
           <folding>
-            <marker date="1542512541863" expanded="true" signature="1:2" ph="..." />
+            <marker date="1542513251199" expanded="true" signature="1:2" ph="..." />
           </folding>
         </state>
       </provider>

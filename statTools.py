@@ -19,7 +19,7 @@ def median(num: list):
         # If the number of items in the list is an odd number, returns the number in the middle
         if len(num) % 2 == 1:
 
-            # multiplication and division there to ensure code will not work with strings
+            # multiplication and division are there to ensure code will not work with strings
             return num[len(num)//2]/2*2
 
         # If the number of items in the list is an even number, returns the mean of the two middle numbers
@@ -140,4 +140,3 @@ def upper_quartile(num: list):
     # Raises an error when a list is not provided
     except AttributeError:
         raise AttributeError("A list was not provided.")
-
