@@ -1,3 +1,28 @@
+# TODO
+
+
+**Leo:**
+
+☑ mean 
+
+☑ mode 
+
+☑ variance 
+
+☑ standard deviation 
+
+
+**Derek:**
+
+☑ median 
+
+☑ range 
+
+☑ lower quartile 
+
+☑ upper quartile 
+
+
 # TDD & Git Assignment
 
 
